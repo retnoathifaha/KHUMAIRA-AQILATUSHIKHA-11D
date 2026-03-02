@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<div class="banner">
+        <img src="Images/house.png" alt="Banner Ppulbatu">
+    </div>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Ppulbatu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Product.html">Product</a>
+  <a href="Book Breakdown.html">Book Breakdown</a>
+  <a href="Testimonial.html">Testimonial</a>
+  <a href="Buyer Testimonial.html">Buyer Testimonial</a>
+  <a href="Contact.html" class="active">Contact</a>
+</nav>
+
+<h1>Let’s Talk Books!</h1>
+
+<div class="contact-container">
+  <h2>Contact Us</h2>
+
+  <div class="contact-info">
+    <p>Email: rkoreksiinternet@gmail.com</p>
+    <p>Location: Japan</p>
+  </div>
+
+  <form action="https://formsubmit.co/rkoreksiinternet@gmail.com" method="POST">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+  
+  <input type="email" name="email" placeholder="Your Email" required>
+  
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+</form>
+  <div class="success-message" id="successMsg">
+    ✅ Message sent successfully!
+  </div>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  document.getElementById("successMsg").style.display = "block";
+
+  this.reset();
+});
+</script>
+
+<footer>
+    <p>&copy; 2026 Ppulbatu House</p>
+</footer>
+
+  <footer class="footer">
+  © 2026 Ppulbatu Book Store — All rights reserved
+</footer>
+
+</body>
+</html>
